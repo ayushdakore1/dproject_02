@@ -1,0 +1,24 @@
+/* Mobile-first polish for comfortable phone browsing */
+html,body{overflow-x:hidden}
+@media(max-width:800px){
+  .topbar{height:auto;min-height:30px;gap:12px;padding:8px 18px;line-height:1.25}
+  .header{height:72px;padding:0 18px;position:relative;background:var(--paper);z-index:10}
+  .logo{gap:8px;font-size:14px}.logo>span{width:33px;height:33px}.logo small{font-size:7px}
+  .menu{display:grid;place-items:center;width:42px;height:42px;color:var(--ink);font-size:23px;cursor:pointer}
+  .header nav{display:none;position:absolute;top:71px;left:0;right:0;padding:16px 18px 20px;background:var(--paper);border-bottom:1px solid var(--line);box-shadow:0 12px 25px rgba(32,37,34,.08);gap:0}
+  .header nav.open{display:grid}.header nav a{padding:13px 4px;border-bottom:1px solid var(--line);font-size:14px}.header nav a:last-child{border-bottom:0}
+  .hero{padding:58px 18px 54px;min-height:0}.eyebrow{font-size:9px;line-height:1.4}
+  .hero h1{font-size:clamp(58px,17vw,78px);line-height:.88;margin:22px 0 25px}.lede{font-size:15px;line-height:1.55;max-width:330px}
+  .hero-actions{gap:18px;flex-wrap:wrap;margin-top:26px}.primary{padding:15px 16px;min-height:48px}.secondary{padding:10px 0}.rating{margin-top:30px}
+  .hero-art{height:260px;margin-top:40px;border-radius:3px}.art-label{left:17px;top:17px;font-size:10px}.art-label b{font-size:16px}
+  .trust{padding:24px 18px;min-height:0}.trust div{gap:12px 22px;font-size:11px}
+  .intro{padding:76px 18px 74px}.intro-grid{margin-top:30px}.intro h2{font-size:clamp(42px,12vw,58px);line-height:.93}.intro-grid>div{margin-top:28px;padding-top:0}.intro-grid>div>p{font-size:17px;line-height:1.5}
+  .products{padding:76px 18px 82px}.section-heading{margin-bottom:30px}.section-heading h2{font-size:clamp(42px,12vw,58px);line-height:.93;margin-top:20px}.section-heading>p{font-size:12px;margin-top:19px}
+  .product-grid{gap:12px}.product-grid article{min-height:0;padding:20px 18px 22px}.category-image{width:calc(100% + 36px);height:auto;min-height:145px;max-height:185px;object-fit:contain;margin:-20px -18px 18px}.product-grid h3{font-size:18px;margin:0 0 9px}.product-grid p{font-size:12px;line-height:1.5;margin-bottom:22px}
+  .gallery{padding:76px 18px 82px}.photo-grid{gap:12px}.photo{min-height:235px;padding:18px}.photo-large{min-height:270px}.photo b{font-size:18px}
+  .why{padding:78px 18px}.why-art{height:250px;margin-bottom:46px;padding:18px}.why-art strong{font-size:37px}.why-art i{font-size:160px}.why h2{font-size:clamp(42px,12vw,58px);line-height:.93;margin:20px 0 35px}.points p{gap:16px;padding:17px 0}.points small{font-size:11px;line-height:1.45}
+  .delivery{padding:78px 18px}.delivery h2{font-size:clamp(44px,12vw,60px)}.delivery-copy p{font-size:16px}.delivery-copy .primary{margin-top:10px}
+  .reviews{padding:76px 18px}.review-grid{margin-top:30px}.reviews blockquote{font-size:32px;line-height:1.05}.review-score{padding-top:20px;margin-top:28px}
+  .contact{padding:78px 18px}.contact h2{font-size:clamp(44px,12vw,60px);line-height:.93;margin:20px 0}.contact>div>p:not(.eyebrow){font-size:14px}.contact-details{gap:18px;margin-top:30px}.contact-details a{font-size:14px}.contact form{gap:20px;margin-top:44px}.contact input,.contact textarea{font-size:16px;padding:12px 0}.contact .primary{width:100%;justify-content:space-between}
+  footer{padding:24px 18px;gap:18px}footer>div{gap:16px}
+}
